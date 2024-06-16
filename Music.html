@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Physics Cheat Sheet</title>
+    <style>
+        /* Basic Reset */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+            scroll-behavior: smooth;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            /* Full height */
+            background-color: #333;
+            /* Dark background color */
+            color: #fff;
+            /* White text color */
+            display: flex;
+            flex-direction: column;
+            padding-top: 160px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            /* Stay fixed to the left */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+        }
+
+        /* Sidebar Item Styling */
+        .sidebar-item {
+            padding: 15px 20px;
+            margin: 10px;
+            background-color: #444;
+            /* Slightly lighter background for items */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+            /* Remove default link underline */
+            color: inherit;
+            /* Inherit text color from parent */
+        }
+
+        /* Hover Effect */
+        .sidebar-item:hover {
+            background-color: #555;
+            /* Even lighter background on hover */
+            transform: translateX(5px);
+            /* Slight slide effect */
+        }
+
+        /* Make text unselectable (optional) */
+        .sidebar-item::selection {
+            background: none;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            /* Ensure it stays above the sidebar */
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 120px 100px;
+            top: 200;
+            max-width: 750px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 270px;
+            /* Account for sidebar width + some space */
+        }
+
+        .section {
+            margin-bottom: 1px;
+            background-color: #c7c5c5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #131313;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2d302e;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 100px;
+            /* Adjust based on your header height */
+            z-index: 2;
+            /* Ensure it stays above the main content */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            /* Even lighter background on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Physics Cheat Sheet</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="#Physics">View</a>
+            <a href="#Music">Add</a>
+            <a href="#Placeholder">Remove</a>
+            <a href="#Placeholder">Change</a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <a href="#motion" class="sidebar-item">Motion</a>
+        <a href="#forces" class="sidebar-item">Forces In Action</a>
+        <a href="#energy" class="sidebar-item">Work, Energy and Power</a>
+        <a href="#springs" class="sidebar-item">Springs and Hooke's Law</a>
+        <a href="#momentum" class="sidebar-item">Laws of Motion and Momentum</a>
+        <a href="#charge" class="sidebar-item">Charge and Current</a>
+        <a href="#power" class="sidebar-item">Energy, Power and Resistance</a>
+        <a href="#circuits" class="sidebar-item">Electrical Circuits</a>
+        <a href="#waves" class="sidebar-item">Waves</a>
+        <a href="#quantum" class="sidebar-item">Quantum Physics</a>
+        <a href="#constants" class="sidebar-item">Constants</a>
+        <a href="#sources" class="sidebar-item">Constants</a>
+    </div>
+    <main>
+        <section id="motion" class="section">
+            <h2>Motion</h2>
+            <h3>Equations</h3>
+            <p>average speed(v) = distance travelled(x) / time taken(t)</p>
+            <p>v = u+at</p>
+            <p> d = 1/2(v+v)t</p>
+            <p>s = ut + 1/2at^2</p>
+            <p>v^2 = u^2 + 2as</p>
+        </section>
+        <section id="forces" class="section">
+            <h2>Forces In Action</h2>
+            <h3>Definitions</h3>
+            <p>Principle of Moments: When a body is balanced, the total clockwise moment about a point equals the total
+                anticlockwise moment about the same point</p>
+            <p>Archimedes' principle: The upthrust exerted on a body immersed in a fluid, whether fully or partially
+                submerged, is equal to the weight of the fluid that the body displaces.</p>
+            <h3>Equations</h3>
+            <p>torque = Fd</p>
+            <p>moment = Fx</p>
+            <p>ρ = m/V</p>
+            <p>p = hρg</p>
+        </section>
+        <section id="energy" class="section">
+            <h2>Work, Energy and Power</h2>
+            <h3>Definitions</h3>
+            <p>Content about work, energy, and power.</p>
+            <h3>Equations</h3>
+            <p>W = Fx cos θ</P>
+            <p>efficiency = useful energy output/total energy input × 100%</p>
+            <p>P = W/t</p>
+            <p>P=Fv</p>
+        </section>
+        <section id="springs" class="section">
+            <h2>Springs and Hooke's Law</h2>
+            <p>Hooke's Law: The force is directly proportional to the deformation, as long as the material deos not
+                exceed its elastic limit.</p>
+            <h3>Equations</h3>
+            <p>F = kx</p1>
+            <p>E = 1/2 x ; E = 1/2 x^2</p1>
+            <p> σ = F/A></p1>
+            <p>ε = x/L</p1>
+            <p>E = σ / ε</p>
+
+        </section>
+        <section id="momentum" class="section">
+            <h2>Laws of Motion and Momentum</h2>
+            <h3>Definitions</h3>
+            <p>Content about laws of motion and momentum.</p>
+            <h3>Equations</h3>
+            <p>F = △p/△t</p>
+            <p>p = mv</p>
+        </section>
+        <section id="charge" class="section">
+            <h2>Charge and Current</h2>
+            <h3>Definitions</h3>
+            <p>Kirchhoffs First Law: For any point in an electrical circuit, the sum of currents into that point is
+                equal to the sum of currents out of that point.
+                I.E. ∑I in = ∑I out
+            </p>
+            <p>Kirchhoffs Second Law: (From the law of conservation of energy) In any circuit, the sum of the
+                electromotive forces is equal to the sum of the p.d.s around a closed loop. I.E. ∑ℰ = ∑V around a closed
+                loop.
+            </p>
+            <p>Electromotive force: Energy transferred from other stores (e.g. Chemical) to electrical energy.</p>
+            <p>Potential difference: Energy transferred from electrical energy to other stores (e.g. Thermal)</p>
+            <h3>Equations</h3>
+            <p>∆Q = I∆t</p>
+            <p>I = Anev</p>
+            <p>W = VQ ; W = ℰQ ; W = VIt</p>
+
+        </section>
+        <section id="power" class="section">
+            <h2>Energy, Power and Resistance</h2>
+            <p>Content about energy, power, and resistance.</p>
+            <h3> Equations</h3>
+            <p>R = ρL/A</p>
+            <p>R = R1 + R2 +…</p>
+            <p>1/R = 1/R1 + 1/R2 +...</p>
+            <p>P = VI</p>
+            <p>P = I^2 R</p>
+            <p>P = V^2/R</p>
+            <p>ℰ = I(R + r) ; ℰ = V + Ir</p>
+            <p> V = IR</p>
+            <h3>Forgettable Things</h3>
+            <p>The resistance R of a wire is directly proportional to its length L:
+                R ∝ L
+                This is because doubling the length of the wire doubles the p.d. so the resistance must have doubled
+                (V/I = R).
+            </p>
+            <p>The resistance R of a wire is inversly proportional to tis cross-sectional area A:
+                R ∝ 1/L
+                This is becouse doubling the A of a wire doubles the current in the wire, therfore resistance must have
+                halved (V/I
+                = R)
+            </p>
+        </section>
+        <section id="circuits" class="section">
+            <h2>Electrical Circuits</h2>
+            <p>Content about electrical circuits.</p>
+            <h3>Equations</h3>
+            <p>V(out) = R2 / (R1 + R2) × V(in)</p>
+        </section>
+        <section id="waves" class="section">
+            <h2>Waves</h2>
+            <h3>Definitions</h3>
+            <p>Principle of Superposition of waves: when two or more waves meet at a point, the resultant displacement
+                at that point is equal to the sum of the
+                displacements of the individual waves at that point.</p>
+            <p>Coherent Waves: Waves with equal or fixed phase difference.</p>
+            <h3>Equations</h3>
+            <p>v = fλ</p>
+            <p>f = 1/T</p>
+            <p>I = P/A</p>
+            <p>λ = ax/D</p>
+            <p>n = c/v</p>
+            <p>n sinθ = constant</p>
+            <p>sin C = 1/n</p>
+        </section>
+        <section id="quantum" class="section">
+            <h2>Quantum Physics</h2>
+            <h3>Definitions</h3>
+            <p>Content about quantum physics.</p>
+            <h3>Equations</h3>
+            <p>E = hf ; E = hc/λ</p>
+            <p>hf = φ + KE(max)</p>
+            <p>λ= h/p</p>
+        </section>
+        <section id="constants" class="section">
+            <h2>Constants</h2>
+            <p>acceleration of free fall g 9.81ms^–2</p>
+            <p>elementary charge e 1.60 × 10^–19C</p>
+            <p>speed of light in a vacuum c 3.00 × 108ms^–1</p>
+            <p>Planck constant h 6.63 × 10^–34 Js</p>
+            <p>Avogadro constant NA 6.02 × 10^23 mol–1</p>
+            <p>molar gas constant R 8.31Jmol–1K–1</p>
+            <p>Boltzmann constant k 1.38 × 10^–23 JK–1</p>
+            <p>gravitational constant G 6.67 × 10^–11 Nm2 kg–2</p>
+            <p>permittivity of free space ε0 8.85 × 10^–12 C2N–1m–2 (Fm–1)</p>
+            <p>electron rest mass me 9.11 × 10^–31 kg</p>
+            <p>proton rest mass mp 1.673 × 10^–27 kg</p>
+            <p>neutron rest mass mn 1.675 × 10^–27 kg</p>
+            <p>alpha particle rest mass mα 6.646 × 10^–27 kg</p>
+            <p>Stefan constant σ 5.67 × 10^–8cWm–2K–4</p>
+        </section>
+        <section id="sources" class="section">
+            <h2>Sources</h2>
+            <p>These are the websites I used:</p>
+            <a href="https://www.ocr.org.uk/Images/363796-units-h156-and-h556-data-formulae-and-relationships-booklet.pdf"
+                class="Source Site">OCR A Data, Formulae and Relationships Booklet,</a>
+            <a href="https://www.bbc.co.uk/bitesize" class="Source Site">BBC Bitesize (The Physics Section),</a>
+            <a href="https://www.physicsandmathstutor.com/" class="Source Site">Physics and Maths Tutor (Notes)</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 The Physics Cheat Sheet.
+    </footer>
+</body>
+
+</html>
